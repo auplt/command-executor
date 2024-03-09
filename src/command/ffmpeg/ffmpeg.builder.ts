@@ -18,7 +18,7 @@ export class FfmpegBuilder {
 
   output(outputPath: string): string[] {
     if (!this.inputPath) {
-      throw new Error("Не задан входящий файл");
+      throw new Error("Incoming file not specified");
     }
     const args: string[] = ["-i", this.inputPath];
     this.options.forEach((value, key) => {

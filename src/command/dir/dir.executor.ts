@@ -13,7 +13,7 @@ export class DirExecutor extends CommandExecutor<IDirInput> {
     super(logger);
   }
   protected async prompt(): Promise<IDirInput> {
-    let path = await this.promptService.input<string>("Путь", "input");
+    let path = await this.promptService.input<string>("Path", "input");
     return { path };
   }
   protected build({ path }: IDirInput): ICommandExec {

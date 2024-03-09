@@ -15,13 +15,13 @@ export class FfmpegExecutor extends CommandExecutor<IFfmpegInput> {
     super(logger);
   }
   protected async prompt(): Promise<IFfmpegInput> {
-    const width = await this.promptService.input<number>("Ширина", "number");
-    const height = await this.promptService.input<number>("Высота", "number");
+    const width = await this.promptService.input<number>("Width", "number");
+    const height = await this.promptService.input<number>("Height", "number");
     const path = await this.promptService.input<string>(
-      "Путь до файла",
+      "Path to file",
       "input"
     );
-    const name = await this.promptService.input<string>("Имя", "input");
+    const name = await this.promptService.input<string>("Name", "input");
     return { width, height, path, name };
   }
 

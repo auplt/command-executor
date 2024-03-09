@@ -2,7 +2,6 @@ import { IStreamLogger } from "../../core/handlers/stream-logger.interface.js";
 
 export class ConsoleLogger implements IStreamLogger {
   private static logger: ConsoleLogger;
-
   public static getLogger() {
     if (!ConsoleLogger.logger) {
       ConsoleLogger.logger = new ConsoleLogger();
@@ -11,12 +10,12 @@ export class ConsoleLogger implements IStreamLogger {
   }
 
   log(...args: any[]): void {
-    console.log(args);
+    console.log(...args);
   }
   error(...args: any[]): void {
-    console.log(args);
+    console.log(...args);
   }
   end(): void {
-    console.log("Готово!");
+    console.log("Done!");
   }
 }

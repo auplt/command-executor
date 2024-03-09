@@ -10,7 +10,7 @@ These three steps will definitely improve your command line user experiance!
 
 ---
 
-Here is a small image, that demonstrates app architecture.
+Here is a small image, that demonstrates the app architecture.
 
 ![Architecture image](./static/images/Architecture.png)
 
@@ -59,11 +59,11 @@ Running the example:
 
 2. Enter requested params. After entering each value type ```Enter``` key. Requested params are
 
-    * **Путь** – absolute incoming video path
-    * **Ширина** – outcoming video width
-    * **Высота** – outcoming video hieght
-    * **Имя** – outcoming video name
+    * **Path to file** – absolute incoming video path
+    * **Width** – outcoming video width
+    * **Height** – outcoming video hieght
+    * **Name** – outcoming video name
 
-3. After entering the last value and typing ```Enter``` key you will see ffmpeg log. When the process will be finished, you will see ```Готово!``` messsage and see converted video as well.
+3. After entering the last value and typing ```Enter``` key you will see ffmpeg log. When the process will be finished, you will see ```Done!``` messsage and see converted video as well.
 
 Add any commands you need and use them withought headache!

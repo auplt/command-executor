@@ -10,11 +10,11 @@ export class StreamHandler {
     });
 
     stream.stderr.on("data", (data: any) => {
-      this.logger.log(data.toString());
+      this.logger.error(data.toString());
     });
 
     stream.on("close", () => {
-      this.logger.log("Готово!");
+      this.logger.end();
     });
   }
 }
