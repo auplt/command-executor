@@ -5,7 +5,7 @@ import { ICommandExecFfmpeg, IFfmpegInput } from "./ffmpeg.types.js";
 import { FileService } from "../../core/files/file.service.js";
 import { PromptService } from "../../core/prompt/prompt.service.js";
 import { FfmpegBuilder } from "./ffmpeg.builder.js";
-import { StreamHandler } from "../../core/handlers/stream.helndler.js";
+import { StreamHandler } from "../../core/handlers/stream.handler.js";
 
 export class FfmpegExecutor extends CommandExecutor<IFfmpegInput> {
   private fileService: FileService = new FileService();
